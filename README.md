@@ -5,7 +5,14 @@ My Own Bootloader from Scratch
 
 I will be making a _Bootloader_ by myself in future but in _Rust_ Programming Language. 
 
-**References:**
+### **How to use the bootloader?**
+
+We are using nasm for the binary compilation and qemu emulator for floppy disk emulation of the bootloader.
+
+For compilation: `nasm -f bin boot1.asm -o boot1.bin`
+For qemu emulation: `qemu-system-x86_64 -fda boot1.bin`
+
+### **References:**
 1. https://kernel-internals.org/arch/x86/boot/
 2. https://0xax.gitbook.io/linux-insides/summary/booting/linux-bootstrap-1
 3. https://dev.to/aayushgid/building-a-bootloader-from-scratch-an-x86-assembly-guide-fpi
